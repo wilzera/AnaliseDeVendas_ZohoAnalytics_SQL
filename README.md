@@ -1,6 +1,6 @@
 # DesafioKinvo
 Repositório contendo a resolução do desafio técnico para a vaga de Analista de Dados Pleno da Kinvo
-Candidato: Willian Rocha - CPF:112.704.696-90
+Candidato: Willian Rocha 
 
 # Visualização de dados:
 Ferramenta escolhida foi a Zoho Analytics. Optei por esta ferramenta pela sua praticidade e como a utilizo no meu atual emprego, tenho mais experiência com ela do que com outras ferramentas, como o Power BI por exemplo. 
