@@ -6,13 +6,13 @@ Candidato: Willian Rocha - CPF:112.704.696-90
 Ferramenta escolhida foi a Zoho Analytics. Optei por esta ferramenta pela sua praticidade e como a utilizo no meu atual emprego, tenho mais experiência com ela do que com outras ferramentas, como o Power BI por exemplo. 
 
 # Relatórios/Visualizações:
-**- KINVO - Acompanhamento das vendas** - https://analytics.zoho.com/open-view/2333751000000026317: Dashboard contendo 4 KPIs: Faturamento Bruto, Ticket Médio, Quantidade de Clientes atendidos e Quantidade de vendas realizadas. E contendo também os demais relatórios citados abaixo.
-**- Quantidade de clientes por canal de comunicação:** Relatório contendo a quantidade de clientes por canal de comunicação
-**- Top10 produtos mais vendidos em quantidade:** Relatório contendo os 10 produtos mais vendidos em quantidade
-**- Faturamento por canal  de comunicação:** Relatório contendo o faturamento por canal de comunicação
-**- Top5 categorias de produto mais lucrativas:** Relatório contendo as 5 categorias de produtos mais lucrativas
-**- Valor total de venda por mês/ano:** Relatório contendo o valor de faturamento (venda total) por mês/ano
-**- Vendas analíticas:** Relatório contendo uma visão analítica das vendas, no modelo de tabela pivot
+- ** KINVO - Acompanhamento das vendas** - https://analytics.zoho.com/open-view/2333751000000026317: Dashboard contendo 4 KPIs: Faturamento Bruto, Ticket Médio, Quantidade de Clientes atendidos e Quantidade de vendas realizadas. E contendo também os demais relatórios citados abaixo.
+- **- Quantidade de clientes por canal de comunicação:** Relatório contendo a quantidade de clientes por canal de comunicação
+- **- Top10 produtos mais vendidos em quantidade:** Relatório contendo os 10 produtos mais vendidos em quantidade
+- **- Faturamento por canal  de comunicação:** Relatório contendo o faturamento por canal de comunicação
+- **- Top5 categorias de produto mais lucrativas:** Relatório contendo as 5 categorias de produtos mais lucrativas
+- **- Valor total de venda por mês/ano:** Relatório contendo o valor de faturamento (venda total) por mês/ano
+- **- Vendas analíticas:** Relatório contendo uma visão analítica das vendas, no modelo de tabela pivot
 
 # Análise de vendas:
 1) Quais são os produtos mais vendidos em termos de quantidade?
