@@ -17,41 +17,37 @@ Ferramenta escolhida foi a Zoho Analytics. Optei por esta ferramenta pela sua pr
 # Análise de vendas:
 1) Quais são os produtos mais vendidos em termos de quantidade?
 ```
-SELECT
-		 prod.id AS 'IDProduto',
-         prod.nome AS 'Produto',
-         SUM(ven.quantidade) AS 'QuantidadeTotalVendida'
-FROM  vendas ven
-LEFT JOIN produtos prod ON ven.produto_id  = prod.id 
-GROUP BY
-	 prod.id,
-         prod.nome
- ORDER BY
-	QuantidadeTotalVendida DESC
+SELECT 
+prod.id AS 'IDProduto',
+       prod.nome AS 'Produto',
+       Sum(ven.quantidade) AS 'QuantidadeTotalVendida'
+FROM   vendas ven
+LEFT JOIN produtos prod ON ven.produto_id = prod.id
+GROUP  BY prod.id,
+          prod.nome
+ORDER  BY quantidadetotalvendida DESC 
 ```
 2) Qual é o valor total das vendas para cada mês do último ano?
 ```
-SELECT
-		 	ABS_MONTH(ven.data_venda) AS 'DataVenda',
-      -- Para facilitar na inserção de dados e não precisar calcular o valor_total correto para cada venda manualmente, estou calculando o valor total de venda multiplicando o preco do produto x quantidade da venda
-		 SUM(prod.preco * ven.quantidade) AS 'ValorTotal'
-FROM  vendas ven
-LEFT JOIN produtos prod ON ven.produto_id  = prod.id 
-WHERE YEAR(ven.data_venda) < YEAR(CURDATE())
-GROUP BY DataVenda
+SELECT 
+ABS_MONTH(ven.data_venda)AS 'DataVenda',       
+-- Para facilitar na inserção de dados e não precisar calcular o valor_total correto para cada venda manualmente, estou calculando o valor total de venda multiplicando o preco do produto x quantidade da venda
+       Sum(prod.preco * ven.quantidade) AS 'ValorTotal'
+FROM   vendas ven
+LEFT JOIN produtos prod ON ven.produto_id = prod.id
+WHERE  Year(ven.data_venda) < YEAR(CURDATE())
+GROUP  BY datavenda 
 ```
 3)Quais são as categorias de produtos mais lucrativas?
 ```
-SELECT
-		 prod.categoria AS 'Categoria de Produto',
-         -- Para facilitar na inserção de dados e não precisar calcular o valor_total correto para cada venda manualmente, estou calculando o valor total de venda multiplicando o preco do produto x quantidade da venda
-         SUM(prod.preco * ven.quantidade) AS 'ValorFaturamento'
-FROM  vendas ven
-LEFT JOIN produtos prod ON ven.produto_id  = prod.id 
-GROUP BY
-	 prod.categoria
- ORDER BY
-	ValorFaturamento DESC   
+SELECT 
+prod.categoria AS 'Categoria de Produto',       
+-- Para facilitar na inserção de dados e não precisar calcular o valor_total correto para cada venda manualmente, estou calculando o valor total de venda multiplicando o preco do produto x quantidade da venda
+SUM(prod.preco * ven.quantidade) AS 'ValorFaturamento'
+FROM   vendas ven
+LEFT JOIN produtos prod ON ven.produto_id = prod.id
+GROUP  BY prod.categoria
+ORDER  BY valorfaturamento DESC 
   ```
 
 # Análise de clientes:
